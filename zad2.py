@@ -1,7 +1,5 @@
-import pyspark
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
-from pyspark.sql.types import StructType, StringType, FloatType
 import time
 import os
 import sys
@@ -9,21 +7,36 @@ import sys
 os.environ['PYSPARK_PYTHON'] = sys.executable
 os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
 
-spark = SparkSession.builder.master("local").appName("hdfs_city").getOrCreate()
+def get_args():
+    exp_arg = [ ("master","string"),
+                ("time_s","float"),
+                ("time_e", "float"),
+                ("print","bool")]
+    
+    def convert_to(data, type):
+        if type=="int":
+            return int(data)
+        elif type=="float" or type=="float":
+            return float(data)
+        elif type=="bool":
+            return data=="print"
+        return data
 
-start = time.time()
+    args = sys.argv[1:]
+    print(args)
+    if len(args)< len(exp_arg)-1:
+        print("Nedovoljno argumenata!")
+        sys.exit(-1)
 
-emsData = spark.read.csv("hdfs://localhost:9000/data/emissions.csv", sep=';', inferSchema=True, header=True)
-
-exp_arg = [("time_s","float"),
-           ("time_e", "float")]
-
-def convert_to(data, type):
-    if type=="int":
-        return int(data)
-    elif type=="float" or type=="float":
-        return float(data)
-    return data
+    arg_dict={}
+    for i in range(len(args)):
+        arg_dict[exp_arg[i][0]] = convert_to(args[i], exp_arg[i][1])
+    if not "type" in arg_dict.keys():
+        arg_dict["type"] = None
+    if not "print" in arg_dict.keys():
+        arg_dict["print"] = True
+    
+    return arg_dict
 
 def get_processing(name):
     n = "vehicle_"+name
@@ -39,26 +52,29 @@ def get_all_processing(names):
             rez.append(x)
     return rez
 
-args = sys.argv[1:]
-if len(args)< len(exp_arg)-1:
-    print("Nedovoljno argumenata!")
-    sys.exit()
+def print_output(rez):
+    print(rez.count())
+    rez.show()
 
-arg_dict={}
-for i in range(len(args)):
-    arg_dict[exp_arg[i][0]] = convert_to(args[i], exp_arg[i][1])
-if not "type" in arg_dict.keys():
-    arg_dict["type"] = None
+arg_dict= get_args()
 
-q = "timestep_time"
+spark = SparkSession.builder.master(arg_dict["master"]).appName("hdfs_city").getOrCreate()
+start = time.time()
+emsData = spark.read.csv("hdfs://localhost:9000/data/emissions.csv", sep=';', inferSchema=True, header=True)
+
 rez = emsData.filter((emsData.timestep_time>=arg_dict["time_s"]) &
                      (emsData.timestep_time<=arg_dict["time_e"]))\
                     .groupBy("vehicle_lane").agg(
                         *get_all_processing(["CO2","CO","HC","NOx","PMx","noise","fuel","electricity"])
                     )
 
-print(rez.count())
-rez.show()
+end=time.time()
 
-end = time.time()
-print(end-start,"s")
+with open("logs.txt",'a') as f:
+    time_s = arg_dict["time_s"]
+    time_e = arg_dict["time_e"]
+    tip = "Samo master" if arg_dict["master"] == "local" else "Cluster"
+    print("Zadatak 2, "+tip + " "+str(time_s)+"-"+str(time_e),file=f)
+
+if arg_dict["print"]:
+    print_output(rez)
