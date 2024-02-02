@@ -1,0 +1,67 @@
+Zadatak 2, Samo master 0.0-1200.0
+	 Vreme: 106.50546836853027 s
+Zadatak 2, Samo master 0.0-1200.0
+	 Vreme: 97.89993476867676 s
+Zadatak 2, Samo master 0.0-1200.0
+	 Vreme: 102.5133957862854 s
+Zadatak 2, Samo master 0.0-1200.0
+	 Vreme: 99.94637894630432 s
+Zadatak 2, Samo master 0.0-1200.0
+	 Vreme: 98.17880392074585 s
+
+Zadatak 2, Samo master 0.0-2400.0
+	 Vreme: 102.64018297195435 s
+Zadatak 2, Samo master 0.0-2400.0
+	 Vreme: 110.43623113632202 s
+Zadatak 2, Samo master 0.0-2400.0
+	 Vreme: 103.42326641082764 s
+Zadatak 2, Samo master 0.0-2400.0
+	 Vreme: 103.94675302505493 s
+Zadatak 2, Samo master 0.0-2400.0
+	 Vreme: 103.727530002594 s
+
+
+Zadatak 2, Samo master 0.0-3600.0
+	 Vreme: 114.42994356155396 s
+Zadatak 2, Samo master 0.0-3600.0
+	 Vreme: 108.3794641494751 s
+Zadatak 2, Samo master 0.0-3600.0
+	 Vreme: 110.65868258476257 s
+Zadatak 2, Samo master 0.0-3600.0
+	 Vreme: 110.14521646499634 s
+Zadatak 2, Samo master 0.0-3600.0
+	 Vreme: 110.66741394996643 s
+
+
+Zadatak 2, Cluster 0.0-1200.0
+	 Vreme: 65.48954057693481 s
+Zadatak 2, Cluster 0.0-1200.0
+	 Vreme: 64.24853086471558 s
+Zadatak 2, Cluster 0.0-1200.0
+	 Vreme: 66.39000391960144 s
+Zadatak 2, Cluster 0.0-1200.0
+	 Vreme: 65.44477677345276 s
+Zadatak 2, Cluster 0.0-1200.0
+	 Vreme: 66.26226329803467 s
+
+Zadatak 2, Cluster 0.0-2400.0
+	 Vreme: 66.46297669410706 s
+Zadatak 2, Cluster 0.0-2400.0
+	 Vreme: 67.77537059783936 s
+Zadatak 2, Cluster 0.0-2400.0
+	 Vreme: 65.60588574409485 s
+Zadatak 2, Cluster 0.0-2400.0
+	 Vreme: 68.03232407569885 s
+Zadatak 2, Cluster 0.0-2400.0
+	 Vreme: 66.89619755744934 s
+
+Zadatak 2, Cluster 0.0-3600.0
+	 Vreme: 69.54416298866272 s
+Zadatak 2, Cluster 0.0-3600.0
+	 Vreme: 69.02573299407959 s
+Zadatak 2, Cluster 0.0-3600.0
+	 Vreme: 68.00816249847412 s
+Zadatak 2, Cluster 0.0-3600.0
+	 Vreme: 69.24691653251648 s
+Zadatak 2, Cluster 0.0-3600.0
+	 Vreme: 69.04114151000977 s

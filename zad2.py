@@ -67,7 +67,7 @@ rez = emsData.filter((emsData.timestep_time>=arg_dict["time_s"]) &
                     .groupBy("vehicle_lane").agg(
                         *get_all_processing(["CO2","CO","HC","NOx","PMx","noise","fuel","electricity"])
                     )
-
+rez.show()
 end=time.time()
 
 with open("logs.txt",'a') as f:
@@ -75,6 +75,7 @@ with open("logs.txt",'a') as f:
     time_e = arg_dict["time_e"]
     tip = "Samo master" if arg_dict["master"] == "local" else "Cluster"
     print("Zadatak 2, "+tip + " "+str(time_s)+"-"+str(time_e),file=f)
+    print("\t Vreme: "+str(end-start)+" s", file=f)
 
 if arg_dict["print"]:
     print_output(rez)

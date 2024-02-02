@@ -1,5 +1,0 @@
-spark-class org.apache.spark.deploy.master.Master
-
-spark-class org.apache.spark.deploy.worker.Worker spark://<master-ip>:<master-port>
-
-spark-submit --master spark://<master-ip>:<master-port> your_script.py

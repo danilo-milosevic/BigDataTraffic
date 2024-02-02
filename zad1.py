@@ -60,6 +60,7 @@ rez = fcdData.filter((fcdData.timestep_time>=arg_dict["time_s"]) &
 
 if arg_dict["type"]!=None:
     rez = rez.filter(fcdData.vehicle_type.contains(arg_dict["type"]))
+rez.show()
 end = time.time()
 
 
@@ -74,6 +75,7 @@ with open("logs.txt",'a') as f:
         params +=" Type: "+arg_dict["type"]
 
     print("Zadatak 1, "+tip + " "+params+" "+str(time_s)+"-"+str(time_e),file=f)
+    print("\t Vreme: "+str(end-start)+" s", file=f)
     
 if arg_dict["print"]:
     print_output(rez)

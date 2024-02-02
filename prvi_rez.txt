@@ -1,0 +1,70 @@
+Zadatak 1, Samo master X: -74.0 Y: 40.0 D: 10.0 Type: noprint 0.0-1200.0
+	 Vreme: 111.85968017578125 s
+Zadatak 1, Samo master X: -74.0 Y: 40.0 D: 10.0 Type: noprint 0.0-1200.0
+	 Vreme: 108.38592433929443 s
+Zadatak 1, Samo master X: -74.0 Y: 40.0 D: 10.0 Type: noprint 0.0-1200.0
+	 Vreme: 105.80260109901428 s
+Zadatak 1, Samo master X: -74.0 Y: 40.0 D: 10.0 Type: noprint 0.0-1200.0
+	 Vreme: 106.78536200523376 s
+Zadatak 1, Samo master X: -74.0 Y: 40.0 D: 10.0 Type: noprint 0.0-1200.0
+	 Vreme: 108.8900396823883 s
+	 
+	 
+Zadatak 1, Samo master X: -74.0 Y: 40.0 D: 10.0 Type: noprint 0.0-2400.0
+	 Vreme: 107.55751538276672 s
+Zadatak 1, Samo master X: -74.0 Y: 40.0 D: 10.0 Type: noprint 0.0-2400.0
+	 Vreme: 106.09371137619019 s
+Zadatak 1, Samo master X: -74.0 Y: 40.0 D: 10.0 Type: noprint 0.0-2400.0
+	 Vreme: 107.27671337127686 s
+Zadatak 1, Samo master X: -74.0 Y: 40.0 D: 10.0 Type: noprint 0.0-2400.0
+	 Vreme: 108.04395413398743 s
+Zadatak 1, Samo master X: -74.0 Y: 40.0 D: 10.0 Type: noprint 0.0-2400.0
+	 Vreme: 111.19894862174988 s
+	 
+	 
+Zadatak 1, Samo master X: -74.0 Y: 40.0 D: 10.0 Type: noprint 0.0-3600.0
+	 Vreme: 111.32658696174622 s
+Zadatak 1, Samo master X: -74.0 Y: 40.0 D: 10.0 Type: noprint 0.0-3600.0
+	 Vreme: 110.45753931999207 s
+Zadatak 1, Samo master X: -74.0 Y: 40.0 D: 10.0 Type: noprint 0.0-3600.0
+	 Vreme: 106.96894264221191 s
+Zadatak 1, Samo master X: -74.0 Y: 40.0 D: 10.0 Type: noprint 0.0-3600.0
+	 Vreme: 106.05747842788696 s
+Zadatak 1, Samo master X: -74.0 Y: 40.0 D: 10.0 Type: noprint 0.0-3600.0
+	 Vreme: 107.47487258911133 s
+	 
+	 
+Zadatak 1, Cluster X: -74.0 Y: 40.0 D: 10.0 Type: noprint 0.0-1200.0
+	 Vreme: 96.39343810081482 s
+Zadatak 1, Cluster X: -74.0 Y: 40.0 D: 10.0 Type: noprint 0.0-1200.0
+	 Vreme: 93.10338807106018 s
+Zadatak 1, Cluster X: -74.0 Y: 40.0 D: 10.0 Type: noprint 0.0-1200.0
+	 Vreme: 93.56953358650208 s
+Zadatak 1, Cluster X: -74.0 Y: 40.0 D: 10.0 Type: noprint 0.0-1200.0
+	 Vreme: 94.76137471199036 s
+Zadatak 1, Cluster X: -74.0 Y: 40.0 D: 10.0 Type: noprint 0.0-1200.0
+	 Vreme: 93.38869166374207 s
+	 
+	 
+Zadatak 1, Cluster X: -74.0 Y: 40.0 D: 10.0 Type: noprint 0.0-2400.0
+	 Vreme: 95.56738662719727 s
+Zadatak 1, Cluster X: -74.0 Y: 40.0 D: 10.0 Type: noprint 0.0-2400.0
+	 Vreme: 94.00156760215759 s
+Zadatak 1, Cluster X: -74.0 Y: 40.0 D: 10.0 Type: noprint 0.0-2400.0
+	 Vreme: 93.77035808563232 s
+Zadatak 1, Cluster X: -74.0 Y: 40.0 D: 10.0 Type: noprint 0.0-2400.0
+	 Vreme: 93.81354880332947 s
+Zadatak 1, Cluster X: -74.0 Y: 40.0 D: 10.0 Type: noprint 0.0-2400.0
+	 Vreme: 96.62371754646301 s
+	 
+	 
+Zadatak 1, Cluster X: -74.0 Y: 40.0 D: 10.0 Type: noprint 0.0-3600.0
+	 Vreme: 94.7317578792572 s
+Zadatak 1, Cluster X: -74.0 Y: 40.0 D: 10.0 Type: noprint 0.0-3600.0
+	 Vreme: 95.32735776901245 s
+Zadatak 1, Cluster X: -74.0 Y: 40.0 D: 10.0 Type: noprint 0.0-3600.0
+	 Vreme: 97.00252556800842 s
+Zadatak 1, Cluster X: -74.0 Y: 40.0 D: 10.0 Type: noprint 0.0-3600.0
+	 Vreme: 98.07662582397461 s
+Zadatak 1, Cluster X: -74.0 Y: 40.0 D: 10.0 Type: noprint 0.0-3600.0
+	 Vreme: 97.6962878704071 s
